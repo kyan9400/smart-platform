@@ -90,7 +90,7 @@ export default function InquiryForm() {
     };
 
   const inputClass =
-    "w-full rounded-lg border border-gray-200 bg-white px-3 py-2.5 text-sm text-gray-900 outline-none transition-shadow placeholder:text-gray-400 focus:border-[#1a3a6b] focus:ring-2 focus:ring-[#1a3a6b]/20";
+    "w-full rounded-lg border border-gray-200 bg-white px-3 py-2.5 text-sm text-gray-900 outline-none transition-shadow placeholder:text-gray-400 focus:border-saudi-600 focus:ring-2 focus:ring-saudi-600/20";
 
   return (
     <section className="py-14 sm:py-16 bg-white">
@@ -217,7 +217,7 @@ export default function InquiryForm() {
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#1a3a6b] px-6 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-blue-900 disabled:cursor-not-allowed disabled:opacity-60"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-saudi-800 px-6 py-3 text-sm font-bold text-white shadow-sm transition-colors hover:bg-saudi-900 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {submitting ? (
                 <Loader2 size={18} className="animate-spin" />

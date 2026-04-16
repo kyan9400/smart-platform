@@ -8,7 +8,7 @@ export default function CTASection() {
   const { t } = useLanguage();
 
   return (
-    <section className="py-16 bg-gradient-to-r from-[#0f2348] to-[#1a3a6b] text-white relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-r from-saudi-900 to-saudi-800 text-white relative overflow-hidden border-y border-emerald-600/25">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -16,7 +16,7 @@ export default function CTASection() {
           backgroundSize: "24px 24px",
         }}
       />
-      <div className="absolute -bottom-16 -start-16 w-64 h-64 bg-blue-500/30 rounded-full blur-2xl" />
+      <div className="absolute -bottom-16 -start-16 w-64 h-64 bg-emerald-400/20 rounded-full blur-2xl" />
       <div className="absolute -top-16 -end-16 w-64 h-64 bg-yellow-400/20 rounded-full blur-2xl" />
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -24,13 +24,13 @@ export default function CTASection() {
           {t.cta.kicker}
         </p>
         <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">{t.cta.title}</h2>
-        <p className="text-blue-200 text-base leading-relaxed max-w-xl mx-auto mb-8">
+        <p className="text-emerald-100 text-base leading-relaxed max-w-xl mx-auto mb-8">
           {t.cta.body}
         </p>
         <div className="flex flex-wrap justify-center gap-3">
           <a
             href="#equipment"
-            className="inline-flex items-center gap-2 bg-yellow-400 text-[#0f2348] px-7 py-3 rounded-xl font-bold text-sm hover:bg-yellow-300 transition-all hover:shadow-lg hover:shadow-yellow-400/30 active:scale-95"
+            className="inline-flex items-center gap-2 bg-yellow-400 text-saudi-900 px-7 py-3 rounded-xl font-bold text-sm hover:bg-yellow-300 transition-all hover:shadow-lg hover:shadow-yellow-400/30 active:scale-95"
           >
             {t.cta.browse} <ArrowRight size={15} className="rtl:rotate-180" />
           </a>

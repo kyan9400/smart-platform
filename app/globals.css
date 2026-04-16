@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
+/* Saudi-inspired brand greens + soft page tint */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #e8f5ef;
+  --foreground: #0f291f;
 }
 
 @theme inline {
@@ -10,17 +11,25 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-saudi-950: #02140e;
+  --color-saudi-900: #052a1f;
+  --color-saudi-800: #084030;
+  --color-saudi-700: #0b5c45;
+  --color-saudi-600: #0f7a5c;
+  --color-saudi-500: #14a078;
+  --color-saudi-page: #e8f5ef;
+  --color-saudi-mint: #d4efe3;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--color-saudi-page);
+  background-image: radial-gradient(
+      circle at 20% 0%,
+      rgb(212 239 227 / 0.9) 0%,
+      transparent 45%
+    ),
+    radial-gradient(circle at 80% 10%, rgb(184 228 208 / 0.5) 0%, transparent 40%),
+    linear-gradient(180deg, var(--color-saudi-page) 0%, var(--color-saudi-mint) 100%);
   color: var(--foreground);
   font-family: var(--font-geist-sans), var(--font-noto-arabic), system-ui,
     sans-serif;

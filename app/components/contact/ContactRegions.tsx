@@ -8,7 +8,7 @@ export default function ContactRegions() {
   const r = t.contactPage.regions;
 
   return (
-    <section className="py-14 sm:py-16 bg-[#1a3a6b] text-white relative overflow-hidden">
+    <section className="py-14 sm:py-16 bg-saudi-800 text-white relative overflow-hidden border-y border-emerald-600/20">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -22,7 +22,7 @@ export default function ContactRegions() {
             {r.kicker}
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold mb-3">{r.title}</h2>
-          <p className="text-blue-100/95 text-base leading-relaxed">{r.description}</p>
+          <p className="text-emerald-100/95 text-base leading-relaxed">{r.description}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -35,7 +35,7 @@ export default function ContactRegions() {
                 <MapPin size={22} />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-              <p className="text-sm text-blue-100/90 leading-relaxed">{item.description}</p>
+              <p className="text-sm text-emerald-100/90 leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>

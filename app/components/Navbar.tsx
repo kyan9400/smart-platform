@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-[#1a3a6b] text-white sticky top-0 z-50 shadow-lg">
+    <header className="bg-saudi-800 text-white sticky top-0 z-50 shadow-lg border-b border-emerald-600/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 gap-3">
         <Link href="/" className="flex items-center gap-2 shrink-0 min-w-0">
           <Image
@@ -79,7 +79,7 @@ export default function Navbar() {
           </Link>
           <a
             href={SITE.mailto}
-            className="bg-yellow-400 text-[#1a3a6b] px-3 py-1.5 rounded text-sm font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap"
+            className="bg-yellow-400 text-saudi-900 px-3 py-1.5 rounded text-sm font-semibold hover:bg-yellow-300 transition-colors whitespace-nowrap"
           >
             {t.nav.getStarted}
           </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-[#152d56] px-4 pb-4 flex flex-col gap-3 text-sm border-t border-white/10">
+        <div className="md:hidden bg-saudi-900 px-4 pb-4 flex flex-col gap-3 text-sm border-t border-emerald-500/25">
           {navLinks.map((l) => (
             <Link
               key={l.key}
@@ -127,7 +127,7 @@ export default function Navbar() {
             </Link>
             <a
               href={SITE.mailto}
-              className="bg-yellow-400 text-[#1a3a6b] px-4 py-2 rounded text-sm font-semibold flex-1 text-center hover:bg-yellow-300 transition-colors"
+              className="bg-yellow-400 text-saudi-900 px-4 py-2 rounded text-sm font-semibold flex-1 text-center hover:bg-yellow-300 transition-colors"
               onClick={() => setOpen(false)}
             >
               {t.nav.getStarted}

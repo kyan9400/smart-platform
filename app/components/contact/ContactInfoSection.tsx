@@ -47,7 +47,7 @@ export default function ContactInfoSection() {
   ];
 
   return (
-    <section className="py-14 sm:py-16 bg-gray-50">
+    <section className="py-14 sm:py-16 bg-emerald-50/60 border-y border-emerald-100/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <p className="text-yellow-600 font-semibold text-sm uppercase tracking-widest mb-2">
@@ -62,7 +62,7 @@ export default function ContactInfoSection() {
             const Icon = card.icon;
             const inner = (
               <div className="flex h-full flex-col rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-                <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-[#1a3a6b]/10 text-[#1a3a6b]">
+                <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-saudi-700/10 text-saudi-800">
                   <Icon size={20} />
                 </div>
                 <h3 className="text-sm font-bold text-gray-900 mb-2">{card.title}</h3>
@@ -70,7 +70,7 @@ export default function ContactInfoSection() {
                   <a
                     href={card.href}
                     {...(card.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                    className="text-sm text-blue-700 hover:text-blue-900 hover:underline whitespace-pre-line text-start flex-1"
+                    className="text-sm text-saudi-700 hover:text-saudi-900 hover:underline whitespace-pre-line text-start flex-1"
                   >
                     {card.content}
                   </a>

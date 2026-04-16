@@ -8,7 +8,7 @@ export default function CategorySection() {
   const { t } = useLanguage();
 
   return (
-    <section id="categories" className="py-16 bg-white">
+    <section id="categories" className="py-16 bg-white/95 border-y border-emerald-100/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <p className="text-yellow-500 font-semibold text-sm uppercase tracking-widest mb-2">
@@ -33,7 +33,7 @@ export default function CategorySection() {
                 className={`border rounded-xl p-4 flex flex-col gap-2 hover:shadow-md hover:-translate-y-0.5 transition-all group ${style.color}`}
               >
                 <div className="text-3xl mb-1">{style.emoji}</div>
-                <h3 className="font-bold text-gray-800 text-sm group-hover:text-blue-700 transition-colors text-start">
+                <h3 className="font-bold text-gray-800 text-sm group-hover:text-saudi-700 transition-colors text-start">
                   {cat.name}
                 </h3>
                 <p className="text-gray-500 text-xs leading-relaxed line-clamp-3 text-start">
@@ -47,7 +47,7 @@ export default function CategorySection() {
                   </span>
                   <ArrowRight
                     size={13}
-                    className="text-gray-400 shrink-0 group-hover:text-blue-600 rtl:rotate-180 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-all"
+                    className="text-gray-400 shrink-0 group-hover:text-saudi-600 rtl:rotate-180 group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 transition-all"
                   />
                 </div>
               </a>
@@ -58,7 +58,7 @@ export default function CategorySection() {
         <div className="text-center mt-8">
           <a
             href="#equipment"
-            className="inline-flex items-center gap-2 border border-[#1a3a6b] text-[#1a3a6b] px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-[#1a3a6b] hover:text-white transition-all"
+            className="inline-flex items-center gap-2 border border-saudi-700 text-saudi-800 px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-saudi-800 hover:text-white transition-all"
           >
             {t.categories.viewAll}{" "}
             <ArrowRight size={14} className="rtl:rotate-180" />

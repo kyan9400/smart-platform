@@ -13,7 +13,7 @@ import {
 const serviceIcons = [Truck, Shield, Wrench, HeadphonesIcon, CreditCard, Clock] as const;
 
 const serviceColors = [
-  "bg-blue-100 text-blue-700",
+  "bg-emerald-100 text-emerald-800",
   "bg-green-100 text-green-700",
   "bg-yellow-100 text-yellow-700",
   "bg-purple-100 text-purple-700",

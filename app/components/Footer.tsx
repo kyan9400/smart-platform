@@ -18,7 +18,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="footer" className="bg-[#0a1628] text-gray-400">
+    <footer id="footer" className="bg-saudi-950 text-gray-400 border-t border-emerald-800/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2 text-start">
@@ -59,7 +59,7 @@ export default function Footer() {
                 <a
                   key={i}
                   href="#"
-                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-[#0a1628] transition-all text-gray-400"
+                  className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center hover:bg-yellow-400 hover:text-saudi-950 transition-all text-gray-400"
                   aria-label="Social"
                 >
                   <Icon size={14} />

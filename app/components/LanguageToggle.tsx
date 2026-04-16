@@ -12,7 +12,7 @@ export default function LanguageToggle({ className = "" }: { className?: string 
       onClick={() => setLocale(code)}
       className={`px-2.5 py-1 text-xs font-bold rounded transition-colors ${
         locale === code
-          ? "bg-yellow-400 text-[#1a3a6b]"
+          ? "bg-yellow-400 text-saudi-900"
           : "text-white/80 hover:text-white hover:bg-white/10"
       }`}
       aria-pressed={locale === code}

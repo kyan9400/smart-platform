@@ -1,5 +1,6 @@
 "use client";
 
+import SaudiHeroBackdrop from "@/app/components/SaudiHeroBackdrop";
 import { useLanguage } from "@/app/providers/LanguageProvider";
 import { Clock, HeadphonesIcon, MapPinned } from "lucide-react";
 
@@ -10,27 +11,24 @@ export default function ContactHero() {
   const c = t.contactPage.hero;
 
   return (
-    <section className="relative bg-[#0f2348] text-white overflow-hidden">
-      <div
-        className="absolute inset-0 opacity-15"
-        style={{
-          backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-          backgroundSize: "26px 26px",
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a3a6b]/90 via-[#0f2348]/85 to-[#0a1a3a]" />
-      <div className="absolute -top-16 end-0 h-56 w-56 rounded-full bg-yellow-400/10 blur-3xl" />
+    <section className="relative bg-saudi-950 text-white overflow-hidden">
+      <SaudiHeroBackdrop denseDots />
+
+      <div className="absolute -top-16 end-0 h-56 w-56 rounded-full bg-amber-300/15 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="max-w-3xl text-start">
           <div className="inline-flex items-center gap-2 rounded-full border border-yellow-400/40 bg-yellow-400/15 px-4 py-1.5 text-sm font-medium text-yellow-200 mb-5">
             <Clock size={14} className="shrink-0" />
-            {c.badge}
+            <span>{c.badge}</span>
+            <span className="opacity-90" aria-hidden title="Saudi Arabia">
+              🇸🇦
+            </span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
             {c.title}
           </h1>
-          <p className="text-blue-100/95 text-base sm:text-lg leading-relaxed mb-10">
+          <p className="text-emerald-100/95 text-base sm:text-lg leading-relaxed mb-10">
             {c.description}
           </p>
         </div>

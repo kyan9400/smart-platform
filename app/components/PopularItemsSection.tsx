@@ -46,7 +46,7 @@ function ProductCard({ product }: { product: RentalProduct }) {
       </div>
 
       <div className="p-4 text-start">
-        <p className="text-xs text-blue-600 font-semibold mb-1">{categoryLabel}</p>
+        <p className="text-xs text-saudi-700 font-semibold mb-1">{categoryLabel}</p>
         <h3 className="font-bold text-gray-800 text-sm mb-2 line-clamp-2">{product.name}</h3>
 
         <div className="flex items-center gap-1 mb-2 flex-wrap">
@@ -87,7 +87,7 @@ function ProductCard({ product }: { product: RentalProduct }) {
           <button
             type="button"
             disabled={!product.available}
-            className="bg-[#1a3a6b] text-white text-xs font-semibold px-3 py-2 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
+            className="bg-saudi-800 text-white text-xs font-semibold px-3 py-2 rounded-lg hover:bg-saudi-900 transition-colors disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
           >
             {t.equipment.rentNow}
           </button>
@@ -101,7 +101,7 @@ export default function PopularItemsSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="equipment" className="py-16 bg-gray-50">
+    <section id="equipment" className="py-16 bg-emerald-50/70 border-y border-emerald-100/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <p className="text-yellow-500 font-semibold text-sm uppercase tracking-widest mb-2">
@@ -122,13 +122,13 @@ export default function PopularItemsSection() {
         <div className="text-center mt-10 flex flex-wrap justify-center gap-3">
           <a
             href="#equipment"
-            className="inline-flex items-center gap-2 bg-[#1a3a6b] text-white px-7 py-3 rounded-lg text-sm font-semibold hover:bg-blue-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-saudi-800 text-white px-7 py-3 rounded-lg text-sm font-semibold hover:bg-saudi-900 transition-colors"
           >
             {t.equipment.viewAll} <ArrowRight size={14} className="rtl:rotate-180" />
           </a>
           <a
             href={SITE.mailto}
-            className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-7 py-3 rounded-lg text-sm font-semibold hover:border-[#1a3a6b] hover:text-[#1a3a6b] transition-colors"
+            className="inline-flex items-center gap-2 border border-gray-300 text-gray-700 px-7 py-3 rounded-lg text-sm font-semibold hover:border-saudi-600 hover:text-saudi-800 transition-colors"
           >
             {t.equipment.requestQuote}
           </a>

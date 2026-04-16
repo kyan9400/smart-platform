@@ -10,7 +10,7 @@ export default function ContactFAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-14 sm:py-16 bg-gray-50">
+    <section className="py-14 sm:py-16 bg-emerald-50/50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <p className="text-yellow-600 font-semibold text-sm uppercase tracking-widest mb-2">

@@ -17,9 +17,9 @@ const offerVisual = [
     bg: "bg-green-50 border-green-200",
   },
   {
-    accent: "from-blue-400 to-blue-500",
-    textColor: "text-blue-900",
-    bg: "bg-blue-50 border-blue-200",
+    accent: "from-emerald-400 to-teal-600",
+    textColor: "text-teal-900",
+    bg: "bg-emerald-50 border-emerald-200",
   },
   {
     accent: "from-purple-400 to-purple-500",
@@ -34,7 +34,7 @@ export default function OffersSection() {
   return (
     <section
       id="offers"
-      className="py-16 bg-gradient-to-br from-green-600 to-green-700 relative overflow-hidden"
+      className="py-16 bg-gradient-to-br from-saudi-600 via-saudi-700 to-saudi-900 relative overflow-hidden"
     >
       <div
         className="absolute inset-0 opacity-10"
@@ -45,11 +45,11 @@ export default function OffersSection() {
       />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <p className="text-green-200 font-semibold text-sm uppercase tracking-widest mb-2">
+          <p className="text-emerald-200 font-semibold text-sm uppercase tracking-widest mb-2">
             {t.offers.kicker}
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">{t.offers.title}</h2>
-          <p className="text-green-100 text-base max-w-xl mx-auto">{t.offers.subtitle}</p>
+          <p className="text-emerald-100 text-base max-w-xl mx-auto">{t.offers.subtitle}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -90,11 +90,11 @@ export default function OffersSection() {
         <div className="mt-10 bg-white/15 backdrop-blur-sm border border-white/20 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="text-center sm:text-start">
             <h3 className="text-white font-bold text-lg mb-1">{t.offers.customTitle}</h3>
-            <p className="text-green-100 text-sm">{t.offers.customSubtitle}</p>
+            <p className="text-emerald-100 text-sm">{t.offers.customSubtitle}</p>
           </div>
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 bg-white text-green-700 px-6 py-3 rounded-xl font-bold text-sm hover:bg-green-50 transition-colors whitespace-nowrap shrink-0"
+            className="inline-flex items-center gap-2 bg-white text-saudi-800 px-6 py-3 rounded-xl font-bold text-sm hover:bg-emerald-50 transition-colors whitespace-nowrap shrink-0"
           >
             {t.offers.customCta} <ArrowRight size={14} className="rtl:rotate-180" />
           </a>
