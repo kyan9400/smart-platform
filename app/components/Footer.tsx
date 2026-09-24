@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="lg:col-span-2 text-start">
             <div className="flex items-center gap-2 mb-4 flex-wrap">
               <Image
-                src="/kingdom logo.png"
+                src="/kingdom-logo.png"
                 alt={SITE.companyShort}
                 width={160}
                 height={32}
